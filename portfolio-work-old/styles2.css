@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+body {
+	background: #fff;
+}
+.homecontainer {
+	top:40vh;
+}
+.aboutcontainer {
+	top:25vh;
+}
+
+.homepagefullwidth { 
+	height: 88vh;
+}
+.navcontainer {
+	width:50vh;
+}
+section {
+	height:100vh;
+}
+.homesection {
+	/*background:url(background1.jpg);*/
+}
+.navbar {
+	right: 5vw;
+	font-weight: 600;
+	position:fixed;
+}
+
+.iconup {
+	position: fixed;
+	bottom: 5vh;
+    left: 5vh;
+	font-size: 30px !important;
+}
+.icondown {
+	position:absolute;
+	bottom: 13vh;
+    right: -2vh;
+	transform: rotate(90deg);
+}
+.arrowdowntext{
+	font-size: 20px ;
+}
+h1 {
+	font-size: 50px;
+}
+.blue {
+	color: black;
+}
+.navbar-light, .navbar-toggler {
+	border:none;	
+}
+.bordertop{
+	border-top: 10px solid blue;
+	width: 60%;
+	margin-bottom: 1rem
+}
+p {
+	font-size: 16px;
+}
+.bodycopy {
+	padding-top: 2rem;
+	line-height:30px;
+	
+}
+.ACC {
+	width:5vh;
+	margin-top:1vh;
+}
+.profile {
+	position: absolute;
+	width:20rem;
+	right:2rem;
+	opacity:0.7;
+}
+
+
+
+/*-----------------------------*/
+
+.scrollstuff {
+	position:fixed;
+}
+.squareS {
+	width:3rem;
+	top:10%;
+	left:50%;
+}
+.squareL {
+	width:8rem;
+	top:35%;
+	left:70%;
+}
+.line {
+	width:10rem;
+	top:55%;
+	left: 10%;
+}
+.line, .squareL, .squareS {
+	position: fixed;
+	opacity:0.8;
+}
+
+.workcontainer:hover > .workbody {
+	opacity: 1;
+	transition: 0.5s;
+	color:blue;
+}
+.workcontainer:hover {
+	transition: 0.5s;
+	color:blue;
+	opacity:1;
+}
+.workcontainer {
+	height: 300px;
+	margin-bottom:2rem;
+	color:#454545;
+	opacity:.5;
+}
+.workheader{
+	padding:3rem 2rem 0 2rem;	
+}
+.workbody{
+	padding: 0 2rem 0rem 2rem;
+}
+.loadingbar {
+	position:absolute;
+	background:blue;
+	height:20px;
+	float:left;
+	left: 3rem;
+	top:0;
+	width:0%;
+	opacity:0;
+}
+.workcontainer:hover > .loadingbar {
+	width:80%;
+	transition: 1s;
+	opacity:1;
+}
+
+
+/*--------------webwork---------------*/
+.webworkwrapper {
+	text-align:center;
+	margin-top:2rem;
+}
+.webimage {
+	width:100%;
+	margin:0.5rem;
+	border:1px solid blue;
+}
+.webicon {
+	position:absolute;
+	top:49%;
+	right:0;
+	left:0;
+	color:blue;	
+	opacity:0;
+}
+.webworkwrapper:hover > .webicon {
+	opacity:1;
+	transition: 0.5s;
+	
+}
+.webdescription {
+	position:absolute;
+	color:white;
+	top:60%;
+	right:0;
+	left:0;
+}
+.logo {
+	width:3rem;
+	position: absolute;
+	margin-top: 1rem;
+	left: 5vw;	
+	animation-name: example;
+    animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	
+}
+@keyframes example {
+    0% {border-radius:0px}
+    25% {border-radius: 25px;}
+	50% {border-radius: 25px;}
+	75% {border-radius:0px;}
+	75% {border-radius:0px;}
+}
+.webcontainer {
+	top:10vh;
+}
