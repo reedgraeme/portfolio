@@ -1,0 +1,326 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+body {
+	background: #f0f0f0;
+}
+.homecontainer {
+	top:40vh;
+}
+.aboutcontainer {
+	top:25vh;
+}
+.contactcontainer {
+	top:40vh;
+}
+.homepagefullwidth { 
+	height: 88vh;
+}
+.myworkcontainer {
+	top:35vh
+}
+.navcontainer {
+	width:35vh;
+}
+section {
+	height:100vh;
+}
+.navbar {
+	right: 5vw;
+	font-weight: 600;
+	position:fixed;
+}
+.logo {
+	width:3rem;
+	position: absolute;
+	margin-top: 1rem;
+	left: 5vh;	
+}
+.iconup {
+	position: fixed;
+	bottom: 5vh;
+    left: 5vh;
+	font-size: 30px !important;
+}
+
+.arrowdowntext{
+	font-size: 20px ;
+}
+h1 {
+	font-size: 36px;
+	letter-spacing: 2px;
+	font-weight:700;
+}
+.blue {
+	color: blue;
+}
+.gray {
+	color:#454545;
+}
+.navbar-light, .navbar-toggler {
+	border:none;	
+}
+.bordertop{
+	border-top: 10px solid blue;
+	width: 60%;
+	margin-bottom: 1rem
+}
+p {
+	font-size: 16px;
+}
+.bodycopy {
+	padding-top: 2rem;
+	line-height:25px;
+}
+.ACC {
+	width:5vh;
+	margin-top:1vh;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+	color:blue;
+}
+
+.copyright {
+	text-align:center;
+	color:blue;
+	z-index:-99;
+	overflow: hidden;	
+}
+.footercontainer{
+	margin-top:-3rem
+}
+i {
+	margin: 0 0 1rem 0.5rem;
+}
+.socialmediacontainer {
+	float:right;
+}
+.socialmedia:hover {
+	opacity: 0.7;
+}
+
+
+/*-----------scrolling speeds---------------*/
+.scrollstuff {
+	position:fixed;
+}
+.squareS {
+	width:3rem;
+	top:10%;
+	left:55%;
+}
+.squareL {
+	width:8rem;
+	top:35%;
+	left:70%;
+}
+.line {
+	width:10rem;
+	top:70%;
+	left: 10%;
+}
+.squareS2 {
+	width:3rem;
+	top:50%;
+	left:10%;
+}
+.line2 {
+	width:10rem;
+	top: 110%;
+	left: 75%;
+}
+.profile {
+	width: 15vw;
+	top: 140%;
+	left: 60%;
+	z-index: 99;
+}
+.squareS3 {
+	width:3rem;
+	top:130%;
+	left:18%;
+}
+.line3 {
+	width:10rem;
+	top:140%;
+	left: 10%;
+}
+.squareS4 {
+	width:3rem;
+	top:100%;
+	left:80%;
+}
+.line, .squareL, .squareS, .line2, .squareS2, .profile, .line3, .squareS3, .squareS4 {
+	position: fixed;
+}
+
+
+/*-----------scroll spy---------------*/
+.scrollspy {
+	position:fixed;
+	bottom:40vh;
+}
+#dotNav {
+	z-index: 5;
+	right: 7%;
+	padding: 7px;
+	padding-top: 12px;
+}
+#dotNav ul {
+	list-style: none;
+	margin:0;
+}
+#dotNav li {
+	position: relative;
+	background: none repeat scroll 0 0 #cccccc;
+	border-radius: 15px 15px 15px 15px;
+	cursor: pointer;
+	height: 12px;
+	margin: 10px 10px 0px 0px;
+	width: 12px;
+	vertical-align:bottom;
+}
+#dotNav li.active {
+	background-color: blue;
+	background-image: -moz-linear-gradient(center top , #FFFFFF, #EEEEEE);
+	background-repeat: repeat-x;
+}
+
+
+/*-----------work---------------*/
+
+.workcontainer:hover {
+	transition: 1s;
+	color:blue;
+}
+.workcontainer {
+	height: 250px;
+	color:blue;
+	padding-top:2rem;
+}
+.loadingbar {
+	position:absolute;
+	background:blue;
+	height:10px;
+	float:left;
+	bottom:15rem;
+	width:0%;
+	opacity:0;
+}
+.workcontainer:hover > .loadingbar {
+	width:90%;
+	transition: 1s;
+	opacity:1;
+}
+.workcontainer:hover {
+	text-decoration:none;
+}
+/*--------------web design page---------------*/
+.webworkwrapper {
+	text-align:center;
+	margin-top:2rem;
+}
+.webimage {
+	width:100%;
+	margin:0.5rem;
+
+}
+.webicon {
+	position:absolute;
+	top:49%;
+	right:0;
+	left:0;
+	color:blue;	
+	opacity:0;
+}
+.webworkwrapper:hover > .webicon {
+	opacity:1;
+	transition: 0.5s;
+	
+}
+.webdescription {
+	position:absolute;
+	color:white;
+	top:60%;
+	right:0;
+	left:0;
+}
+.logo {
+	width:3rem;
+	position: absolute;
+	margin-top: 1rem;
+	left: 5vw;	
+	animation-name: example;
+    animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	
+}
+@keyframes example {
+    0% {border-radius:0px}
+    25% {border-radius: 25px;}
+	50% {border-radius: 25px;}
+	75% {border-radius:0px;}
+	75% {border-radius:0px;}
+}
+.webcontainer {
+	top:10vh;
+}
+/*-----------mobile---------------*/
+@media (max-width: 375px) {
+.line, .squareL, .squareS, .line2, .squareS2, .profile, .line3, .squareS3, .squareS4 {
+	display:none;
+	}
+.homecontainer {
+	top:40vh;
+}
+.aboutcontainer {
+	top:5vh;
+}
+.contactcontainer {
+}
+.homepagefullwidth { 
+	height: 88vh;
+}
+.navcontainer {
+	width:50vh;
+}
+.myworkcontainer {
+	top:10vh
+}
+.footercontainer {
+	position: fixed;
+	bottom:0;
+	text-align:right;
+	float:right;
+}
+	.bodycopy{
+		text-align:justify;
+	}
+	#dotNav {
+		display:none;
+	}
+	.navbar-toggler-icon {
+		position:fixed;
+		right:2vw;
+	}
+	.loadingbar {
+		display:none;
+	}
+	.workbody{
+		width: 90vw;
+		text-align: justify;
+	}
+	.secondworkcontainer {
+	 margin-top:-3rem
+		
+	}
+}
